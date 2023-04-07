@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elden Ring</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="website.js"></script>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+      }
+
+      header {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+      }
+
+      nav {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #520044;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 25px;
+      }
+
+      main {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+      }
+
+      li {
+        margin-right: 1rem;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      section {
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+
+      p {
+        margin-top: 0.5rem;
+      }
+
+      audio {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Elden Ring</h1>
+      <img src="https://static.techspot.com/images2/news/bigimage/2022/03/2022-03-17-image-37.jpg" alt="Elden Ring game">
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="gameplay.html">Gameplay</a></li>
+        <li><a href="developers.html">Developers</a></li>
+      </ul>
+    </nav>
+
+    <div class="color-changer">
+      <h2>Change the background color:</h2>
+      <button id="color-1">Color-1</button>
+      <button id="color-2">Color-2</button>
+      <button id="color-3">Color-3</button>
+    </div>
+
+    <button id="show-notification">Show Notification</button>
+
+    <main>
+      <section id="about">
+        <h2>About Elden Ring</h2>
+        <p>Elden Ring is an upcoming action role-playing game developed by FromSoftware and published by<a href="https://www.bandainamcoent.com/" target="_blank"> Bandai Namco Entertainment.</a><p>Elden Ring is set in a vast and richly detailed world filled with lore and mythology.</p>
+        <p>The game is centered around the concept of an Elden Ring, an artifact of immense power that has been shattered, leading to the world's imbalance and decay.
+          The players take on the role of a hero tasked with reassembling the Elden Ring and restoring balance to the world.</p>
+          <p>The world of Elden Ring is filled with a variety of races and factions, each with their own unique history and beliefs.
+            Players will encounter various beings, such as monsters, knights, and even mythical creatures like dragons, as they explore the game world.</p>
+            <p>The game features a deep and non-linear story system, where players can interact with different enemies and make choices that impact the world around them,
+              players will also encounter a number of gods and deities, each with their own unique powers and influence over the world.</p>
+              <p>These gods are central to the game's mythology and play a key role in shaping the world and its events.
+                The game also features a rich pantheon of spirits, some of which can be harnessed to aid the player in combat, while others are used to finish quests.
+                From the shattered Elden Ring to the vast array of races, gods, and spirits, the game's lore promises to be an intricate and immersive part of the player's journey through the game world.</p>
+        
+        <h3>Soundtrack Preview</h3>
+        <audio controls>
+        <source src="01. Elden Ring.mp3" type="audio/mpeg"></audio>    
+        
+        <h3>Available On Platforms</h3>
+        <ul>
+          <li>PlayStation 5</li>
+          <li>PlayStation 4</li>
+          <li>Xbox Series X|S</li>
+          <li>Xbox One</li>
+          <li>PC</li>
+        </ul>
+      </section>
+    </main>
+     
+    <footer>
+      <p>&copy; 2023 Elden Ring</p>
+    </footer>
+  </body>
+</html>
